@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+	<servlet>
+		<servlet-name>EditServlet</servlet-name>
+		<servlet-class>com.tech.blog.servlet.EditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditServlet</servlet-name>
+		<url-pattern>/EditServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+<!-- 	Add post to database -->
+	<servlet>
+		<servlet-name>AddPostServlet</servlet-name>
+		<servlet-class>com.tech.blog.servlet.AddPostServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddPostServlet</servlet-name>
+		<url-pattern>/AddPostServlet</url-pattern>
+	</servlet-mapping>
+	
+<!-- 	Add Like to database -->
+	<servlet>
+		<servlet-name>LikeServlet</servlet-name>
+		<servlet-class>com.tech.blog.servlet.LikeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LikeServlet</servlet-name>
+		<url-pattern>/LikeServlet</url-pattern>
+	</servlet-mapping>
+
+
+	
+<!-- 	Add LoginServlet -->
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.tech.blog.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
